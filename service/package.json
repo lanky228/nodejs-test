@@ -1,0 +1,23 @@
+{
+  "name": "register-service",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http-proxy": "^1.17.0",
+    "util-model": "../lib/util-model/util-model-v1.0.1.tgz"
+  },
+  "scripts": {
+    "start": "babel-node ./src/index.js",
+    "update": "yarn cache clean && rm -r node_modules/util-model/ && yarn add ../lib/util-model/util-model-v1.0.1.tgz",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0"
+  }
+}
